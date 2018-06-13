@@ -119,5 +119,5 @@ for i in res:
         result.append(data)
 
 # записываем результат работы в файл!
-with open("groups.json", "w") as f:
-    f.write(json.dumps(result))
+with open("groups.json", "w", encoding = "utf-8") as f:
+    f.write(json.dumps(result, sort_keys=True, indent=4, ensure_ascii=False))
